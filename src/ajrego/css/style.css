@@ -1,0 +1,38 @@
+/* Panels */
+#pnlRight
+{
+    -fx-background-color: linear-gradient(to right,#0678BF,#B00807);
+}
+
+#pnlLeft
+{
+    -fx-background-color: linear-gradient(to left,#0678BF,#034873);
+}
+
+/* Texts fields */
+.txtField
+{
+    -fx-background-color: transparent;
+}
+
+/* Button login */
+.btnLogin
+{
+    -fx-background-color: linear-gradient(to right,#034873,#B00807);
+    -fx-border-color: #034873;
+    -fx-text-fill:  #fff;
+    -fx-border-radius: 14px;
+    -fx-background-radius: 14px;
+}
+
+.btnLogin:hover
+{
+    -fx-background-color : #0678BF ;
+    -fx-text-fill:  #FFF;
+}
+
+.btnLogin:pressed
+{
+    -fx-background-color: linear-gradient(to right,#034873,#B00807);
+    -fx-text-fill: #FFF;
+}
