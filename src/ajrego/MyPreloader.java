@@ -5,6 +5,7 @@
  */
 package ajrego;
 
+import ajrego.controller.FXMLSplashScreenController;
 import javafx.application.Preloader;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -27,7 +28,7 @@ public class MyPreloader extends Preloader {
 
     @Override
     public void init() throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource(""));
+        Parent root = FXMLLoader.load(getClass().getResource("/ajrego/view/FXMLSplashScreen.fxml"));
         scene = new Scene(root);
     }
 
@@ -43,8 +44,8 @@ public class MyPreloader extends Preloader {
     @Override
     public void handleApplicationNotification(Preloader.PreloaderNotification info) {
         if (info instanceof ProgressNotification) {
-            //FXMLSplashScreenController.progress.setText("Cargando " +
-            //        ((ProgressNotification) info).getProgress() + "%");
+            FXMLSplashScreenController.progress.setText("Cargando "
+                    + ((ProgressNotification) info).getProgress() + "%");
         }
     }
 
